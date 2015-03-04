@@ -264,7 +264,7 @@ public class DeviceDetailFragment extends Fragment implements ConnectionInfoList
 				statusText.setText("File copied - " + result);
 				Intent intent = new Intent();
 				intent.setAction(android.content.Intent.ACTION_VIEW);
-				intent.setDataAndType(Uri.parse("file://" + result), "image/*");
+				intent.setDataAndType(Uri.parse("file://" + result), "file/*");
 				context.startActivity(intent);
 			}
 
